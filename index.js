@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 5000;
 const bodyParser = require('body-parser');
-const { user } = require("./models/User");
+const { User } = require("./models/User");
 
 //application/x-www-form-urlencoded 이런 데이터를 분석해서 가져올수 있도록
 app.use(bodyParser.urlencoded({extended: true}));
