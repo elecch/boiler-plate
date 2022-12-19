@@ -34,4 +34,4 @@ const userSchema = mongoose.Schema({ // Schema란 설계도의 정보
 const User = mongoose.model('User',userSchema); //model(이름부여, 대상) 
 //model은 스키마를 감싸줌
 
-mongoose.export = {User}; // 다른 곳에서도 사용가능
+module.exports = { User }; // 다른 곳에서도 사용가능
